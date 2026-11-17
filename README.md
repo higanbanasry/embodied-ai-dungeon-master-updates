@@ -1,6 +1,12 @@
-# Embodied AI Dungeon Master · 公开进展
+# Embodied AI Dungeon Master · 公开进展 / Public Progress
+
+[中文](#中文) · [English](#english)
+
+## 中文
 
 这是具身智能桌游项目的**精选进展展示仓库**。项目以《遗迹核心：三方夺芯》为桌游场景，研究规则状态、Agent 决策、视觉观察、数字界面与实体桌面动作之间的衔接。本仓库目前只展示最近三个周次的脱敏报告和证据摘要，不包含完整可运行产品代码。
+
+新读者可先看[项目介绍 / About](ABOUT.md)、[桌游规则 / Game rules](GAME_RULES.md)和[进展与后续 / Progress and next steps](ROADMAP.md)。规则页是 Arena v0.3 设计草案，不等于完整实现或纸面试玩验收。
 
 原工程归档仓库继续保持私有：它的早期历史包含本机绝对目录记录，且混有不适合直接公开的工作资料。为了不把旧提交历史一起公开，这里从零建立**独立的新仓库历史**；它不是原仓库的 fork，也没有导入原仓库的 `.git`、旧分支或原始交付包。两仓的职责和后续同步规则见 [发布规则](PUBLISHING_POLICY.md)。
 
@@ -21,3 +27,21 @@ W15 的实体单张 DRAW 是用户确认的真实现场进展，**不是软件�
 3. [发布清单](PUBLICATION_MANIFEST.md)列出本次从私有归档选取的六个文件及其校验值。原始来源文件不在这个公开仓库中，因此这里不能复跑私有工程或独立验收实体动作。
 
 本仓库不发布私人照片与音频、设备日志、凭据、现场配置、完整产品 ZIP、未审阅源码或本机绝对路径。证据状态坚持区分 `SYNTHETIC_OFFLINE`、`STATIC`、`NOT_RUN_BLOCKED` 和 `UNKNOWN`；只有满足现场设备及任务绑定的回执才能升级为独立 `LIVE` 机器证据。
+
+## English
+
+This is a **curated public progress repository** for *Relic Core: Triad Heist*, an embodied-AI tabletop project. The goal is to connect game rules, agent decisions, tabletop perception, a Unity interface, and physical actions through an auditable state flow. This repository contains reviewed descriptions, weekly reports, and redacted evidence summaries, **not the complete runnable product or a physical-robot acceptance package**.
+
+Start with [About the project](ABOUT.md), [Game rules](GAME_RULES.md), and [Progress and next steps](ROADMAP.md). The rules page summarizes the Arena v0.3 **design draft**; a written rule is not proof of implementation or playtest acceptance.
+
+| Week | Dates | Report and evidence | Status |
+|---|---|---|---|
+| W13 | 2026-11-02—11-08 | [Report](reports/W13_2026-11-02_2026-11-08.en.md) · [Evidence](evidence/weekly/W13_2026-11-02/README.en.md) | Complete; software/static scope |
+| W14 | 2026-11-09—11-15 | [Report](reports/W14_2026-11-09_2026-11-15.en.md) · [Evidence](evidence/weekly/W14_2026-11-09/README.en.md) | Complete; full physical game not accepted |
+| W15 | 2026-11-16—11-22 | [Report](reports/W15_2026-11-16_2026-11-22.en.md) · [Evidence](evidence/weekly/W15_2026-11-16/README.en.md) | In progress, updated 2026-11-17 |
+
+W14 is the latest completed week. In W15 the user confirmed that a **physical single-card DRAW** was completed on site. This is a real-world progress report, not a software simulation. The public materials do not yet independently verify the complete post-action machine result, RGB-D observation, or stop feedback. A continuous three-card sequence, play/discard actions, and a full physical game remain unaccepted.
+
+The original engineering archive remains private because its early history includes local absolute paths and other material unsuitable for wholesale publication. This repository has independent history and did not import those commits. See the [publishing policy](PUBLISHING_POLICY.md). Ordinary Git history accumulates, so “three weeks at launch” is **not** a promise of a permanently rolling three-week visibility window.
+
+Read a report first, then its evidence summary (IDs E065–E082), and finally the [publication manifest](PUBLICATION_MANIFEST.md). The six Chinese report/evidence files are byte-identical to selected private-archive copies; their English companions are reviewed translations. The private original evidence is not present, so this repository cannot reproduce private engineering or independently accept physical actions. Private media, device logs, credentials, site configurations, complete product ZIPs, and local absolute paths are excluded.
